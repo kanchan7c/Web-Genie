@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="shortcut icon" href="favicon.png" type="image" />
+
+  <!-- Google fonts  -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet" />
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+
+  <!-- Bootstrap icons  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+  <title>Web Genie</title>
+  <style>
+     .accordianContainer {
+       width: 90%;
+     }
+  </style>
+</head>
+
+<body>
+  <!-- navigation  -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="Logo.png" alt="LOGO" /></a>
+      <a class="navbar-brand text-success text-wrap fw-bold me-5 fs-2" href="index.html">Web Genie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Contact</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Courses
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item text-muted" href="#">HTML</a></li>
+              <li><a class="dropdown-item text-muted" href="#">CSS</a></li>
+              <li>
+                <a class="dropdown-item text-muted" href="#">JavaScript</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider text-muted" />
+              </li>
+              <li>
+                <a class="dropdown-item text-muted" href="#">All Courses</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Online Classes
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item text-muted" href="#">Active Classes</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-muted" href="#">Cancelled Classes</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider text-muted" />
+              </li>
+              <li>
+                <a class="dropdown-item text-muted" href="#">All Classes</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Account
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li>
+                <a class="dropdown-item text-muted" href="#">Settings</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-muted" href="#">Privacy</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-muted" href="#">Payments</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-muted" href="#">Registered Classes</a>
+              </li>
+              <li>
+                <hr class="dropdown-divider text-muted" />
+              </li>
+              <li>
+                <a class="dropdown-item text-danger" href="#"><i class="bi bi-heart-fill mx-2"></i>Wishlist</a>
+              </li>
+              <li>
+                <a class="dropdown-item text-primary" href="#">
+                  <i class="bi bi-box-arrow-right mx-2"></i> Log Out</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-primary" href="register.html">Register</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search this site" aria-label="Search" />
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- hero  -->
+  <div class="alert alert-success alert-dismissible fade show text-danger text-center" role="alert">
+    <strong>Hello there!</strong> Enroll today and get 50% off on all courses.
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+  <div class="w-100 my-3">
+    <div id="carouselExampleInterval" class="carousel slide w-75 mx-auto border border-3 rounded border-dark shadow"
+      data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="20000">
+          <img
+            src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tcHV0ZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+            class="d-block w-100" alt="COMPUTER">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://media.istockphoto.com/photos/young-female-programmers-talking-in-the-office-picture-id1250639681?b=1&k=20&m=1250639681&s=170667a&w=0&h=AGKKxwNyCHKWI7zl7sruUHrgu1rwguYsVLHTEFFiuCo="
+            class="d-block w-100" alt="CODE">
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://images.unsplash.com/photo-1577760258779-e787a1733016?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y3NzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+            class="d-block w-100" alt="CSS">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fHJlYWN0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+            class="d-block w-100" alt="REACT">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+<!-- cards  -->
+<h2 class="text-light text-center bg-dark mt-5 w-75 mx-auto">COURSES</h2>
+  <div class="cards d-lg-inline-flex d-md-flex mx-auto my-5" style="width: 100%;">
+    <div class="card mx-auto my-3 shadow-lg shadow" style="width: 25rem;">
+      <img
+        src="https://images.unsplash.com/photo-1598705352140-be8e33a97d55?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGFpfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+        class="card-img-top">
+      <div class="card-body">
+        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the
+          bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card mx-auto my-3 shadow-lg shadow" style="width: 25rem;">
+      <img
+        src="https://images.unsplash.com/photo-1598705352140-be8e33a97d55?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGFpfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+        class="card-img-top">
+      <div class="card-body">
+        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the
+          bulk of the card's content.</p>
+      </div>
+    </div>
+    <div class="card mx-auto my-3 shadow-lg shadow" style="width: 25rem;">
+      <img
+        src="https://images.unsplash.com/photo-1598705352140-be8e33a97d55?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGFpfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
+        class="card-img-top">
+      <div class="card-body">
+        <p class="card-text text-center text-muted">Some quick example text to build on the card title and make up the
+          bulk of the card's content.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- accordian  -->
+
+  <h2 class="text-light text-center bg-dark my-5 w-75 mx-auto">FAQs</h2>
+  <div class="accordianContainer mx-auto mb-5">
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button bg-primary text-light fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Accordion Item #1
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, at?</strong></p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi officiis laboriosam, dolorem magni minus nisi quod cupiditate iusto repudiandae distinctio inventore nostrum ab, dicta eaque odio culpa doloribus ut accusantium provident! Praesentium tempora, voluptatibus omnis ipsa aperiam necessitatibus, minus atque natus sequi enim id commodi laudantium at autem ex labore?
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed bg-primary text-light fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Accordion Item #2
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, at?</strong></p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi officiis laboriosam, dolorem magni minus nisi quod cupiditate iusto repudiandae distinctio inventore nostrum ab, dicta eaque odio culpa doloribus ut accusantium provident! Praesentium tempora, voluptatibus omnis ipsa aperiam necessitatibus, minus atque natus sequi enim id commodi laudantium at autem ex labore?
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed bg-primary text-light fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Accordion Item #3
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <p><strong>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, at?</strong></p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi officiis laboriosam, dolorem magni minus nisi quod cupiditate iusto repudiandae distinctio inventore nostrum ab, dicta eaque odio culpa doloribus ut accusantium provident! Praesentium tempora, voluptatibus omnis ipsa aperiam necessitatibus, minus atque natus sequi enim id commodi laudantium at autem ex labore?
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript inclusion-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
